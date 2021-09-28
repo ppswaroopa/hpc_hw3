@@ -1,19 +1,38 @@
-def solution(list, num):
-    a = 0
-    b = 0
-    result = []
-    index_map = {}
-    for i, ele in enumerate(list):
-        difference = num - ele
-        if difference in index_map:
-            result.append(i)
-            result.append(index_map[difference])
-            break
-        else:
-            index_map[num] = i
-    return a, b
 
 
-numbers = [0, 21, 78, 19, 90, 13]
-print(solution(numbers, 21))
-print(solution(numbers, 25))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Question 8
+
+# from matplotlib import pyplot as plt
+# import numpy as np
+# from scipy.fft import fft, fftfreq
+#
+# # Frequency in terms of Hertz
+# fre = 5
+# # Sample rate
+# fre_samp = 50
+# t = np.linspace(0, 2, 2 * fre_samp, endpoint=False)
+# a = np.sin(fre * 2 * np.pi * t)
+#
+# yf = fft(y)
+# xf = np.linspace(0.0, 1.0/2.0* fre_samp), fre/2)
+#
+# figure, axis = plt.subplots()
+# axis.plot(t, a)
+# axis.set_xlabel('Time (s)')
+# axis.set_ylabel('Signal amplitude')
+# plt.show()
